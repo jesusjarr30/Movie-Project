@@ -15,10 +15,10 @@ public class MovieService {
     public List<Movie> AllMovies(){
         return movieRepository.findAll();
     }
-    public Optional<Movie> singleMovie(ObjectId id){
+    /*public Optional<Movie> singleMovie(ObjectId id){
         return movieRepository.findById(id);
-    }
+    }*/
     public Optional<Movie> singleMovie(String imdbId){
-        return movieRepository.findMovieByimbdId(imdbId);
+        return movieRepository.findMovieByImdbId(imdbId);
     }
 }
